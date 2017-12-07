@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="p5/p5.js"></script>
+      <script src="p5/p5.dom.js"></script>
+      <script src="js/cadastro.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+      <link rel="stylesheet" type="text/css" href="loginstyle">
+    <meta charset="utf-8">
+    <title>SCC</title>
+  </head>
+  <body>
+    <div class="grid-site">
+        <h1 class="brand-logo">
+            <img src="imagens/logo_scc.png" alt="SCC Sistema para condominios">
+        </h1>
+      <div class="apresentacao">
+    <h2>Edição de Cadastros SCC</h2> 
+      </div>
+
+  <!-- DADOS PESSOAIS-->
+  <div class="dados-pessoais">
+   <legend>Dados Pessoais</legend>
+      <p>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome">
+      </p>
+      <p>
+      <label for="sobrenome">Sobrenome: </label>
+      <input type="text" id="sobrenome">
+      </p>
+      <p><label for="rg">RG: </label>
+      <input type="text" id="rg" size="13" maxlength="13">
+      </p> 
+      <p><label>CPF:</label>
+      <input type="text" id="cpf" size="9" maxlength="11" readonly>
+      </p>
+      <p><label>TEL:</label>
+        <input type="text" id="tel" size="11" maxlength="11">
+        </p>
+    </div>
+
+  <!-- ENDEREÇO -->
+  <div class="dados-endereco">
+   <legend>Dados de Endereço</legend>
+      <p>
+      <label for="rua">Endereco:</label>
+      <input type="text" id="rua" readonly>
+      </p>
+      <p>
+      <label for="numero">Numero:</label>
+      <input type="text" id="numero" size="4">
+      </p>
+      <p>
+        <label for="numero">Complemento:</label>
+        <input type="text" id="complemento" size="4" >
+        </p>
+      <p>
+      <label for="bairro">Bairro: </label>
+      <input type="text" id="bairro" readonly>
+      </p>
+      <p>
+      <label for="estado">UF:</label>
+      <input type="text" id="estado" readonly>
+    </p>
+    <p>
+      <label for="cidade">Cidade: </label>
+      <input type="text" id="cidade" readonly>
+    </p>
+  </div>
+  <!-- DADOS DE LOGIN -->
+  <div class="dados-login">
+   <legend>Dados de login</legend>
+      <label for="email">E-mail: </label>
+      <input type="text" id="email">
+      <label for="pass">Senha: </label>
+      <input type="password" id="senha">
+  </div>
+  <div class="menu">
+      <button type="button" class="menu-item" id="enviar">Salvar</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="p5/p5.js"></script>
+      <script src="p5/p5.dom.js"></script>
+      <script src="js/contas.js"></script>
+      <script src="js/jspdf.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/reservas.css">
+    <meta charset="utf-8">
+    <title>SCC</title>
+  </head>
+  <body>
+    <!-- SITE BOX-GRID -->
+    <div class="grid-site">
+        <h1 class="brand-logo">
+            <img src="imagens/logo_scc.png" alt="SCC Sistema para condominios">
+        </h1>
+      <!--RESERVAS ATIVAS-->
+          <h2 class="panel-title">Contas</h2>
+        <div style="overflow-x:auto;">
+        <table class="table">
+              <tr>
+                <th>Conta</th>
+                <th>Tipo-conta</th>
+                <th>Valor</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>123456789</td>
+                <td>Água</td>
+                <td>110.39</td>
+                <td><a class="btn btn-default" id="baixar">Baixar</a></td>
+              </tr>
+            </table>
+          </div>
+       </div>
+  </body>
+</html>

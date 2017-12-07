@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="p5/p5.js"></script>
+      <script src="p5/p5.dom.js"></script>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/reserva.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/reservas.css">
+    <meta charset="utf-8">
+    <title>SCC</title>
+  </head>
+  <body>
+    <!-- SITE BOX-GRID -->
+    <div class="grid-site">
+        <h1 class="brand-logo">
+            <img src="imagens/logo_scc.png" alt="SCC Sistema para condominios">
+        </h1>
+      <!--RESERVAS ATIVAS-->
+          <h2 class="panel-title">Reservas Ativas</h2>
+        <div style="overflow-x:auto;">
+        <table class="table" id="tb">
+              <tr>
+                <th>Área</th>
+                <th>Data</th>
+                <th>Data-Devolução</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </table>
+          </div>
+
+        <!--CRIAR RESERVA-->
+          <h2 class="panel-title">Criar nova Reserva</h2>
+          <div class="criar-reserva">
+          <p>
+            <label for="Area">Área:</label>
+            <select id="area-1">  
+            </select>
+          </p>
+          <p>
+            <label>Data: </label>
+            <input id="c-data" type="date" min="2017-12-06" max="2017-12-12">
+          </p>
+          <p>
+            <label>Data-Devolução: </label>
+            <input id="c-datadv" type="date" min="2017-12-06" max="2017-12-12">
+          </p>
+          <p><a class="btn btn-default" id="criar">Criar</a></p>
+        </div>
+        
+        <!--EDITAR RESERVA-->
+        <h2 class="panel-title">Editar Reserva</h2>
+        <div class="criar-reserva editar-reservas" id="editar-reserva">
+        <p>
+          <label for="Area">Área:</label>
+          <input type="text" id="ed-area" readonly>
+          </select>
+        </p>
+        <p>
+          <label>Data: </label>
+          <input id="ed-data" type="date" min="2017-12-06" max="2017-12-12"> 
+        </p>
+        <p>
+          <label>Data-Devolução: </label>
+          <input id="ed-datadv" type="date" min="2017-12-06" max="2017-12-12">
+        </p>
+        <p><a class="btn btn-default" id="editar">Editar</a></p>
+      </div>
+       </div>
+  </body>
+</html>
